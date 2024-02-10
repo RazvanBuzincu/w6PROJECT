@@ -1,0 +1,22 @@
+/* Shop Page CSS */
+
+
+.shop-header {
+    background-image: url("https://wallpapers.com/images/hd/orange-charmander-fanart-br63v4dqv2vaeqky.jpg");
+    background-size: cover;
+    height: 700px;
+    color: cyan; 
+}
+
+.shop-stats {
+    color: cyan; 
+}
+
+.nav-link:hover {
+    color: cyan; 
+    background-color: #007bff; 
+    border-radius: 5px; 
+    background-color: orange;
+}
+
+
