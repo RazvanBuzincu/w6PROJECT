@@ -62,32 +62,7 @@ def get_image(search):
 
 
 
-# def get_image(search):
-#     # 4 parts to every api
-#     # url required 
-#     # queries/parameters optional
-#     # headers/authorization optional
-#     # body/postin optional
 
-#     url = "https://cse.google.com/cse?cx=30cbfd08c3c8a4f30"
-
-#     querystring = {"q": search,"gl":"us","lr":"lang_en","num":"10","start":"0"}
-
-#     headers = {
-#         "CSE-Google-Key": " AIzaSyDIUoLiqb4GCifcxDryMB3xkGdVaWUL7K4 ",
-#         "CSE-Google-Host": "https://cse.google.com/cse?cx=30cbfd08c3c8a4f30"
-#     }
-
-#     response = requests.get(url, headers=headers, params=querystring)
-
-#     data = response.json()
-
-#     img_url = ""
-
-#     if 'items' in data.keys():
-#            img_url = data['items'][0]['originalImageUrl'] 
-
-#     return img_url
 
 class JSONEncoder(json.JSONEncoder):
     def default(self, obj):
