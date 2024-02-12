@@ -36,3 +36,4 @@ db.init_app(app)
 migrate = Migrate(app, db)
 app.json_encoder = JSONEncoder
 cors = CORS(app)
+

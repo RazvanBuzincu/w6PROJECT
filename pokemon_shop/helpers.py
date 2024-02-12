@@ -4,6 +4,28 @@ import requests_cache
 import json
 
 requests_cache.install_cache('image_cache', backend='sqlite')
+
+
+
+
+# def get_pokemon_data(name):
+#     """Fetch data for a given Pokémon by name from the Poke API."""
+#     url = f"https://pokeapi.co/api/v2/pokemon/{name.lower()}"
+#     response = requests.get(url)
+#     if response.status_code == 200:
+#         data = response.json()
+#         image_url = data['sprites']['front_default']
+#         return {
+#             'name': name,
+#             'image_url': image_url,
+            
+#         }
+#     else:
+#         return None  
+
+
+
+
 def get_image(search):
     # 4 parts to every api
     # url required 
@@ -47,7 +69,7 @@ def get_image(search):
 #     # Make the API request
 #     response = requests.get(url, params=params)
     
-#     # Parse the response JSON
+#     
 #     data = response.json()
     
 #     
